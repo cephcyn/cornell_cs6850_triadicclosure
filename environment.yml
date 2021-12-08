@@ -1,7 +1,6 @@
-name: py39
+name: triadic
 channels:
   - defaults
 dependencies:
   - python=3.9
   - anaconda
-prefix: /opt/homebrew/Caskroom/miniconda/base/envs/py39
