@@ -221,7 +221,9 @@ def simulate_cascade(G, thresholds, seed_set,
         neighbors = list(G[n])
         if len(neighbors) == 0:
             return 0
-        num_active_neighbors = np.count_nonzero([active_nodes[neighbor] for neighbor in neighbors])
+        num_active_neighbors = np.count_nonzero([
+            active_nodes[neighbor] for neighbor in neighbors
+        ])
         return num_active_neighbors / len(neighbors)
     
     # Run rounds
